@@ -54,7 +54,7 @@ func TestXxx(t *testing.T) {
 				// frequency of each token, used to determine which token can be encoded
 				// the most frequently used token is encoded first
 				// we should delete the token from the frequency map after it is encoded and replace it with the encoded token
-				freq:    map[string]int{"Z": 2, "Y": 2, "a": 2, "d": 1, "c": 1},
+				freq:    map[string]int{"Z": 2, "Y": 2, "d": 1, "a": 1, "c": 1},
 				encoded: "XdXac",
 			},
 		},
