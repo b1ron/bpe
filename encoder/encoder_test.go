@@ -10,25 +10,25 @@ func TestXxx(t *testing.T) {
 		/*
 			https://en.wikipedia.org/wiki/Byte_pair_encoding
 
-			count the frequency of each token in "aaabdaaabac":
+			count the frequency of each token pair in "aaabdaaabac":
 
 			iteration 1:
 			aaabdaaabac
-			a=6
-			b=2
-			d=1
-			c=1
+			a=2
+			b=0
+			d=0
+			c=0
 
 			ZabdZabac
 			Z=aa
 
 			iteration 2:
 			ZabdZabac
-			Z=2
 			ab=2
-			d=1
-			a=2
-			c=1
+			Z=0
+			d=0
+			a=0
+			c=0
 
 			ZYdZYac
 			Y=ab
@@ -36,11 +36,10 @@ func TestXxx(t *testing.T) {
 
 			iteration 3:
 			ZYdZYac
-			Z=2
-			Y=2
-			d=1
-			a=1
-			c=1
+			ZY=2
+			d=0
+			a=0
+			c=0
 
 			XdXac
 			X=ZY
