@@ -24,15 +24,15 @@ func TestXxx(t *testing.T) {
 
 			iteration 2:
 			ZabdZabac
-			ab=2
 			Z=0
+			ab=2
 			d=0
 			a=0
 			c=0
 
 			ZYdZYac
-			Y=ab
 			Z=aa
+			Y=ab
 
 			iteration 3:
 			ZYdZYac
@@ -53,7 +53,7 @@ func TestXxx(t *testing.T) {
 				// frequency of each token, used to determine which token can be encoded
 				// the most frequently used token is encoded first
 				// we should delete the token from the frequency map after it is encoded and replace it with the encoded token
-				// freq at iteration 2:
+				// freq at iteration 3:
 				freq:    map[string]int{"ZY": 2, "d": 0, "a": 0, "c": 0},
 				encoded: "XdXac",
 			},
